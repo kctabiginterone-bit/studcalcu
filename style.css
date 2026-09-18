@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 700px;
+}
+
+.card {
+    background: white;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #777;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 5px rgba(102, 126, 234, 0.3);
+}
+
+.grades {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background: #667eea;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #5568d9;
+    transform: translateY(-2px);
+}
+
+/* Result */
+
+.result {
+    margin-top: 30px;
+    padding: 25px;
+    background: #f7f7f7;
+    border-radius: 10px;
+    border-left: 5px solid #667eea;
+}
+
+.result h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.result-info p {
+    margin-bottom: 10px;
+    color: #444;
+}
+
+.average {
+    margin-top: 20px;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.average span {
+    display: block;
+    color: #777;
+    margin-bottom: 5px;
+}
+
+.average strong {
+    font-size: 32px;
+    color: #667eea;
+}
+
+.status {
+    margin-top: 20px;
+    padding: 15px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+.passed {
+    background: #d4edda;
+    color: #155724;
+}
+
+.failed {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .card {
+        padding: 25px;
+    }
+
+    .grades {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+}
